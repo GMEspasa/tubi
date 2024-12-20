@@ -19,7 +19,7 @@ def index():
                 error = '⚠️ Accés denegat! Has de tenir més de 18 anys.'
             else:
                 return redirect(url_for('video'))
-    return render_template('index.html', error=error)
+    return render_template('video.html', error=error)
 
 # Ruta del vídeo
 @app.route('/video')
