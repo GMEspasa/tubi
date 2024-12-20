@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,12 @@
             Abans d’accedir, assegura’t de portar els EPIs adequats: guants, mascareta i protecció ocular. 
             <span class="biohazard-symbol">☣️</span>
         </p>
-        <form action="index.html" method="POST">
+        <form action="video.html" method="GET">
             <label for="birthdate">Introdueix la teva data de naixement:</label>
             <input type="date" id="birthdate" name="birthdate" required>
             <button type="submit" class="submit-button">Accedir</button>
         </form>
-        {% if error %}
-            <p class="error">{{ error }}</p>
-        {% endif %}
+        <p id="error"></p>
     </div>
 </body>
 </html>
